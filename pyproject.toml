@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "csv_merge"
+version = "0.1"
+authors = [
+    {name = "Olof Sjödin", email = "olsj@kth.se"}
+]
+dependencies = ["numpy", "argparse"]
+
+[project.scripts]
+csv_merge = "csv_merge:main"
